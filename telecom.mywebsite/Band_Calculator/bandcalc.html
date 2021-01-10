@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en"
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css"
+  <title><h1>LTE Band Calculator</h1></title>
+<body> 
+<script src="app.js"></script>
+  <form name="band_calc_64">
+    <table>
+      <tr><td colspan="3"><b>Enter LTE band configuration for 1-64 below. Use this value in QXDM NV item 65633</td></tr></b>
+      <tr>
+        <td>LTE Band 1:</td>
+        <td><input type="text" name="band1" size="12" minlength=1 maxlength=2 placeholder=1-64
+                  onchange="calc_upto64();"></td>
+      </tr>
+
+      <tr>
+        <td>LTE Band 2:</td>
+        <td>
+          <input type="text" name="band2" size="12" minlength=1 maxlength=2 placeholder="1-64" onchange="calc_upto64();"></td>
+      </tr>
+
+      <tr>
+        <td>LTE Band 3:</td>
+        <td>
+          <input type="text" name="band3" size="12" minlength=1 maxlength=2 placeholder="1-64" onchange="calc_upto64();"></td>
+      </tr>
+
+      <tr><td colspan="3">
+        NV item 65633 result:
+      </td></tr>
+
+      <tr>
+              <td>
+                Decimal value:
+              </td>
+        <td><input type="text" name="decvalue" size="12" class="result"></td>
+      </tr>
+      <br>
+      <br>
+
+   </table>
+  </form>
+
+<form name="band_calc_128">
+  <table>
+    <tr><br></tr>
+        <tr><br></tr>
+        <td colspan="3"><b>Enter LTE band configuration for 65-128 below</b></td>
+            <tr>
+                      <td>
+                        LTE extended Band 1:
+                      </td>
+              <td>
+                <input type="text" name="eband1" size="12" minlength=2 maxlength=3 placeholder=65-128 onchange="calc_upto128();">
+              </td>
+            </tr>
+            
+            <tr>
+                       <td>
+                        LTE extended Band 2:
+                      </td>
+              <td>
+                <input type="text" name="eband2" size="12" minlength=2 maxlength=3 placeholder=65-128 onchange="calc_upto128();">
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                NV item 73680 result:
+              </td>
+            </tr>
+            <tr>
+              <td>Decimal value:</td>
+              <td><input type="text" name="decvalue" size="12"class="result"></td>
+            </tr>
+
+    </table>
+  </form>
+
+<p>
+  <br>
+  <a href="https://www.cellmapper.net/arfcn">EARFCN CALCULATOR LINK</a>
+</p>
+</body>
+</html>
+
