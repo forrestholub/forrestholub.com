@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Picture Gallery</title>
+  <link rel="stylesheet" type="text/css" href="picture.css">
+  <link rel="stylesheet" type="text/css" href="navigate.css">
+  <style>
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+</style>
+</head>
+<body>
+
+<script src="picture.js"></script>
+<script src="navigate.js"></script>
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" >Home</a>
+  <a href="gallery.html"class="active">Gallery</a>
+
+  <div class="dropdown">
+    <button class="dropbtn">Projects</button>
+    <div class="dropdown-content">
+      <a href="projects/ESP.php">Soil Moisture Control</a>
+          <a href="projects/api.php">API Fun</a>
+    </div>
+  </div>
+  <a href="about.html"> About</a>
+  <a href="resume.html">Resume </a>
+  <a href="contact.php">Contact</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navigate()">&#9875;</a>
+</div>
+
+
+  <h2 style="text-align:center">
+    Washington State</h2>
+  
+  <div class="container">
+    <div class="mySlides">
+      <div class="numbertext">1 / 5</div>
+      <img src="images\high_steel_bridge.JPG" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">2 / 5</div>
+      <img src="images\lake_cushman.JPG" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">3 / 5</div>
+      <img src="images\lake_washington.JPG" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">4 / 5</div>
+      <img src="images\sailboat.JPG" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">5 / 5</div>
+      <img src="images\vance_creek_bridge.JPG" style="width:100%">
+    </div>
+  
+  
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+  
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="images\high_steel_bridge.JPG" alt="High Steel Bridge" style="width:100%" onclick="currentSlide(1)">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images\lake_cushman.JPG" alt="Lake cushman" style="width:100%" onclick="currentSlide(2)">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images\lake_washington.JPG" alt="Lake Washington" style="width:100%" onclick="currentSlide(3)" >
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images\sailboat.JPG" alt="How to Park a Sailboat" style="width:100%" onclick="currentSlide(4)" >
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images\vance_creek_bridge.JPG" alt="Vance Creek Bridge" style="width:100%" onclick="currentSlide(5)">
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  
+</body>
+</html>

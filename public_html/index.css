@@ -1,0 +1,170 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+/*dimensions 4032 x 3024 lake_washington  */
+body{
+  background-image: url("images/lake_washington.JPG");  
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: fixed;
+  height: 100%;
+
+}
+/* dimensions 756 x 1008 : sailboat_mobile*/
+  @media screen and (max-width: 768px) {
+  body {
+    background-image: url("images/sailboat_iphone6.jpg"); 
+    background-position: fixed;
+    background-size: cover;
+    /* background-repeat:repeat-y; */
+  }
+  /* footer {
+  display: block;
+  width: 100%; 
+  bottom: 0;
+  height: 50px;
+  background-color: grey;
+  } */
+
+}
+
+    /******************************************************************
+ALL THE BOTTOM STUFF 
+dont display bottom hamburger icon until window is small*/
+.footer-social-icons .icon {
+  display: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+p > a:hover{
+    color: #d9d9d9;
+    text-decoration:  underline;
+}
+
+.footer-social-icons {
+    width: 100%; /* width of footer bar*/
+    height: 36px; /* height of footer bar*/
+    display:block;
+    float: left;
+    /* background: #322f30; */
+    margin: 3px;
+    position:absolute;
+    left: 30%;
+    bottom: 30%;
+    text-align:start;
+}
+.social-icon {
+    color: #fff;
+    padding: 15px; /* padding between social-icon elements  */
+}
+
+.fa-facebook {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    /* background-color: #322f30; */
+}
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+.fa-twitter {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    /* background-color: #322f30; */
+}
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+.fa-youtube {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    /* background-color: #322f30; */
+}
+.fa-youtube:hover {
+    background-color: #e64a41;
+}
+.fa-linkedin {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    /* background-color: #322f30; */
+}
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}
+.fa-google-plus {
+    padding:10px 9px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    /* background-color: #322f30; */
+}
+.fa-google-plus:hover {
+    background-color: #e25714;
+}
+
+.fa-instagram {
+    padding:10px 9px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    /* background-color: #322f30; */
+}
+
+.fa-instagram:hover {
+  /* background-color:#ff0000; */
+background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+.fa-soundcloud {
+    padding:10px 9px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    /* background-color: #322f30; */
+}
+.fa-soundcloud:hover {
+  background-color:#ff7700;
+}
+  .footer-social-icons.socialmove {
+display: none;
+
+  }
+/* what happens when screen in shrunked */
+@media screen and (max-width: 768px) {
+  .footer-social-icons {
+top: 80px; 
+left: 0px; 
+width: 40px;
+height: 300px;
+align-items: left;
+
+}
+}
