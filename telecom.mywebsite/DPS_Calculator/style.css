@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+@import url(https://fonts.googleapis.com/css?family=Allerta+Stencil);
+
+
+/*dimensions 800 x 600 farmity  */
+body{
+  background-image: url("boats-up.jpg");  
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: fixed;
+  height: 100%;
+
+  color: black;
+  background-color: whitesmoke;
+}
+  h1 {
+ color: black;
+ text-align:left;
+ font-family:"Allerta Stencil", sans-serif; 
+  }
+  /* h2 { */
+  /* color: black; */
+  /* text-align:left; */
+  /* font-family: "Allerta Stencil", sans-serif; */
+  /* } */
+  /* h3 { */
+  /* color: black; */
+  /* text-align:left; */
+  /* font-family: "Allerta Stencil", sans-serif; */
+  /* } */
+/* td.result{ */
+  /* border-style: solid; */
+  /* border-color: green; */
+/* } */
+
+/* dimensions 756 x 1008 : sailboat_mobile*/
+  @media screen and (max-width: 768px) {
+  body {
+    background-image: url("trash-storm-high-fulltide.jpg"); 
+    background-position: fixed;
+    background-size: cover;
+    /* background-repeat:repeat-y; */
+  }
+}

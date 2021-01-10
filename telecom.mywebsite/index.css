@@ -1,0 +1,21 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+body {
+  height: 100%;
+  background-image: url("images/lte-tower-palm-2.jpg");
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: cover; 
+
+}
+  @media screen and (max-width: 768px) {
+  body {
+    background-image: url("images/lte-tower-palm.jpg"); 
+    background-position: fixed;
+    background-size: cover;
+
+  }
+}
+
+

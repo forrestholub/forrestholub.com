@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en"
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css"
+  <title><h1>Dynamic Power Sharing Power Calculator (5G Feature)</h1></title>
+<body> 
+<script src="app.js"></script>
+  <form name="DPS_Calc_Form">
+    <table>
+      <tr><td colspan="3"><b>Enter power from ENDC from NR and LTE below to show sum.</td></tr></b>
+      <tr>
+        <td>NR power value:</td>
+        <td><input type="text" name="p1" size="12" minlength=1 maxlength=4 placeholder="1-32"
+        onchange="DPS_Calc();"></td>
+      </tr>
+
+      <tr>
+        <td>LTE power value</td>
+        <td>
+          <input type="text" name="p2" size="12" minlength=1 maxlength=4 placeholder="1-32" 
+        onchange="DPS_Calc();"></td>
+      </tr>
+
+      <tr><td colspan="3">
+        Result:
+      </td></tr>
+
+      <tr>
+              <td>
+               Power in dBm:
+              </td>
+        <td><input type="text" name="dBmvalue" size="12" class="result"></td>
+      </tr>
+      <br>
+      <br>
+
+   </table>
+  </form>
+
+<p>
+  <br>
+</p>
+</body>
+</html>
+

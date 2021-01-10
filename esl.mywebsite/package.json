@@ -1,0 +1,14 @@
+{
+  "name": "mywebsite",
+  "version": "1.0.0",
+  "description": "Website Sounds",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cheesehead",
+  "license": "MIT",
+  "dependencies": {
+    "howler": "^2.0.14"
+  }
+}
